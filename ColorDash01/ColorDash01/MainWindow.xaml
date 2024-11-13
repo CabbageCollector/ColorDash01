@@ -1,0 +1,140 @@
+﻿<Window x:Class="ColorDash01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ColorDash01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid x:Name="startScreen" Visibility="Visible">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="btnStartGame" Content="Start Game"
+                    Width="150" Height="50" 
+                    FontSize="20" FontWeight="DemiBold" Click="btnStartGame_Click">
+
+            </Button>
+
+            <TextBlock Grid.Row="1" Text="Tap the correct arrow key to the target color when it appears. Go as fast as possible!"
+                       FontSize="24" FontWeight="DemiBold" Margin="20" TextWrapping="Wrap" TextAlignment="Center"/>
+
+
+
+        </Grid>
+
+        <Grid x:Name="gameScreen" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".3*"/>
+                <RowDefinition Height=".6*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".3*"/>
+                    <RowDefinition Height=".7*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Points -->
+                <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"
+                           Text="Points:" FontSize="20"/>
+
+                <TextBlock Grid.Column="0" Grid.Row="1" 
+                           x:Name="tbPoints"
+                           Text="10" FontSize="90" FontWeight="Bold"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+
+                <!-- Target Color -->
+
+                <TextBlock Grid.Column="1" Grid.Row="0" Text="Target Color:" FontSize="20" HorizontalAlignment="Center"/>
+                <Border Grid.Column="1" Grid.Row="1" x:Name="bTargetColor"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Height="100" Width="100" 
+                        Background="Black"/>
+
+
+                <!-- Timer -->
+                <TextBlock Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center"
+                           Text="Time Left:" FontSize="20"/>
+
+                <TextBlock Grid.Column="2" Grid.Row="1" 
+                           x:Name="tbTimer"
+                           Text="10" FontSize="90" FontWeight="Bold"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            </Grid>
+
+            <!-- Testing -->
+            <Button Grid.Row="1" x:Name="genNewColors" Click="genNewColors_Click"
+                    HorizontalAlignment="Left" Width="100" Height="50"
+                    Content="Gen New Colors" Visibility="Collapsed"/>
+
+            <!-- Bottom -->
+            <Grid Grid.Row="1" Height="300" Width="300">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Colors Row A-->
+                <Border x:Name="a1" Background="Blue" BorderBrush="Black"
+                        MouseDown="color_Click" MouseEnter="color_Enter" MouseLeave="color_Leave"
+                        Grid.Column="0" Grid.Row="0"/>
+                <Border x:Name="a2" Background="Blue" BorderBrush="Black"
+                        MouseDown="color_Click" MouseEnter="color_Enter" MouseLeave="color_Leave"
+                        Grid.Column="1" Grid.Row="0"/>
+                <Border x:Name="a3" Background="Blue" BorderBrush="Black"
+                        MouseDown="color_Click" MouseEnter="color_Enter" MouseLeave="color_Leave"
+                        Grid.Column="2" Grid.Row="0"/>
+
+                <Border x:Name="b1" Background="Blue" BorderBrush="Black"
+                        MouseDown="color_Click" MouseEnter="color_Enter" MouseLeave="color_Leave"
+                        Grid.Column="0" Grid.Row="1"/>
+                <Border x:Name="b2" Background="Blue" BorderBrush="Black"
+                        MouseDown="color_Click" MouseEnter="color_Enter" MouseLeave="color_Leave"
+                        Grid.Column="1" Grid.Row="1"/>
+                <Border x:Name="b3" Background="Blue" BorderBrush="Black"
+                        MouseDown="color_Click" MouseEnter="color_Enter" MouseLeave="color_Leave"
+                        Grid.Column="2" Grid.Row="1"/>
+
+                <Border x:Name="c1" Background="Blue" BorderBrush="Black"
+                        MouseDown="color_Click" MouseEnter="color_Enter" MouseLeave="color_Leave"
+                        Grid.Column="0" Grid.Row="2"/>
+                <Border x:Name="c2" Background="Blue" BorderBrush="Black"
+                        MouseDown="color_Click" MouseEnter="color_Enter" MouseLeave="color_Leave"
+                        Grid.Column="1" Grid.Row="2"/>
+                <Border x:Name="c3" Background="Blue" BorderBrush="Black"
+                        MouseEnter="color_Enter" MouseLeave="color_Leave" MouseDown="color_Click"
+                        Grid.Column="2" Grid.Row="2"/>
+
+            </Grid>
+
+            <Border x:Name="bdrDisplayRound"
+                    Visibility="Visible" Grid.Row="1" Background="White" Height="100" Width="200" CornerRadius="10"
+                    MouseEnter="displayRound_MouseEnter" MouseLeave="displayRound_MouseLeave" MouseDown="Border_MouseDown">
+                <TextBlock x:Name="tbDisplayRound"
+                           Text="Round 1" FontSize="30" FontWeight="Bold"
+                           VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+
+        </Grid>
+    </Grid>
+</Window>

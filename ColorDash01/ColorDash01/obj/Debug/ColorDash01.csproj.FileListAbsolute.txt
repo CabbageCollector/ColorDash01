@@ -1,0 +1,15 @@
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\bin\Debug\ColorDash01.exe.config
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\bin\Debug\ColorDash01.exe
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\bin\Debug\ColorDash01.pdb
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01.csproj.AssemblyReference.cache
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\MainWindow.g.cs
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\App.g.cs
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01_MarkupCompile.cache
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01_MarkupCompile.lref
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\MainWindow.baml
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01.g.resources
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01.Properties.Resources.resources
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01.csproj.GenerateResource.cache
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01.csproj.CoreCompileInputs.cache
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01.exe
+C:\Users\minio\source\repos\ColorDash01\ColorDash01\obj\Debug\ColorDash01.pdb
